@@ -22,5 +22,5 @@ wc = WordCloud(background_color="white",
 	               	stopwords=stopwords).generate(textdata)
 	
 #wordcloud= WordCloud(width=800,height=800,background_color='white',stopwords=stopwords,min_font_size=10).generate(textdata)
-wc.to_file('Image.png')
+wc.to_file('wc2.png')
 print('Image Saved Sucessfullly')
