@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 15 15:47:05 2020
-
-@author: hp
-"""
 from os import path
 import numpy as np
 from wordcloud import WordCloud, STOPWORDS
@@ -16,11 +10,9 @@ stopwords=set(STOPWORDS)
 
 f=open('file.txt','r+')
 textdata=f.read().replace('\n','')
-wc = WordCloud(background_color="white",
-					max_words=200, 
-					mask=mask,
-	               	stopwords=stopwords).generate(textdata)
+wc = WordCloud(background_color="white", max_words=200, mask=mask, stopwords=stopwords).generate(textdata)
 	
 #wordcloud= WordCloud(width=800,height=800,background_color='white',stopwords=stopwords,min_font_size=10).generate(textdata)
+
 wc.to_file('wc2.png')
-print('Image Saved Sucessfullly')
+print('Image Saved Sucessfully')
